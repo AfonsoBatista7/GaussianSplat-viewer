@@ -40,7 +40,7 @@
             const collisionUrl =
                 url.searchParams.get('collision') ?? url.searchParams.get('voxel') ?? bootstrap.collisionUrl ?? null;
             const settingsUrl = url.searchParams.get('settings') ?? bootstrap.settingsUrl ?? './settings.json';
-            const contentUrl = url.searchParams.get('content') ?? bootstrap.contentUrl ?? './scene.compressed.ply';
+            const contentUrl = url.searchParams.get('content') ?? bootstrap.contentUrl ?? './scene.sog';
 
             // Names the bootstrap's contentUrl when the url itself has no usable name (a data:
             // uri, say) — the splat format is chosen by the name's extension. Ignored when a
