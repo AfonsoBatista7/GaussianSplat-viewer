@@ -6,8 +6,8 @@ services:
     ports:
       - "8080:80"
     volumes:
-      - /srv/gaussian-splat/scene.sog:/usr/share/nginx/html/scene.sog:ro
-      - /srv/gaussian-splat/settings.json:/usr/share/nginx/html/settings.json:ro
+      - /srv/www/gaussian-splat/scene.sog:/usr/share/nginx/html/scene.sog:ro
+      - /srv/www/gaussian-splat/settings.json:/usr/share/nginx/html/settings.json:ro
     deploy:
       replicas: 1
       placement:
